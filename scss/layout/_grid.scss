@@ -1,0 +1,50 @@
+//--------------------------------------------------------
+//create grid with grid-template-areas
+//--------------------------------------------------------
+.grid-parent {
+  @include display-grid;
+  // grid-template-columns: 1fr repeat(3, 400px) 1fr;
+  grid-gap: 30px;
+  grid-template-areas:
+  "nav"
+  "header"
+  "categories"
+  "products"
+  "discount"
+  "footer";
+}
+.main-header {
+  grid-area: header;
+  // grid-column-start: 2;
+  // grid-column-end: 5;
+}
+.main-nav {
+  grid-area: nav;
+}
+.categories {
+  grid-area: categories;
+}
+.products {
+  grid-area: products;
+}
+.discount {
+  grid-area: discount;
+}
+.main-footer {
+  grid-area: footer;
+}
+
+@media (min-width: 640px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "header  header"
+      "nav     nav"
+      "sidebar content"
+      "ad      footer";
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
