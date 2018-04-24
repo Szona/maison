@@ -1,0 +1,40 @@
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+}
+.img-logo {
+    display: none;
+}
+.text-logo {
+  font-family: 'Roboto', sans-serif;
+  color: $font-color;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.menu {
+  display: none;
+}
+.shopping-cart {
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+}
+.items-counter {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 7%;
+  right: 6%;
+  z-index: 2;
+  display: inline-block;
+  text-align: center;
+  padding: 3px;
+  color: rgba(255, 255, 255, 1);
+}
