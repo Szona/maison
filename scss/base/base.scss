@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/**
+ * Basic style for links
+ */
+a {
+  text-decoration: none;
+  color: black;
+}
+/**
+ * Basic style for lists
+ */
+ li {
+   list-style: none;
+ }
