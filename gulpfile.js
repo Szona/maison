@@ -4,20 +4,25 @@ var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
 var minify = require('gulp-minify');
 
+gulp.task('serve', ['sass'], function() {
+
+    browserSync.init({
+        server: "C:/Users/Dawid/Desktop/maison"
+    });
+
+    gulp.watch("app/scss/*.scss", ['sass']);
+    gulp.watch("app/*.html").on('change', browserSync.reload);
+});
+
+// Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-
-    return gulp.src('scss/style.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass({
-        outputStyle: 'expanded',
-        errLogToConsole: true}))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('css'));
-
+    return gulp.src("scss/style/.scss")
+        .pipe(sass({
+          outputStyle: 'expanded',
+          errLogToConsole: true }))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest("css"))
+        .pipe(browserSync.stream());
 });
 
-gulp.task('watch', ['sass'], function(){
-
-    gulp.watch('scss/**/*.scss', ['sass']);
-
-});
+gulp.task('default', ['serve']);
