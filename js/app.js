@@ -5,25 +5,32 @@ document.addEventListener("DOMContentLoaded", function(){
 //navigation
   const menuWraper = document.getElementsByClassName("menu-wrapper");
   const hamburger = document.querySelector(".hamburger-menu");
+  const menu = document.querySelector(".menu");
 
-  function toggleMenu() {
+  function animateHamburger() {
     hamburger.classList.toggle("animate");
   };
+  function openMenu() {
+    animateHamburger();
+    menu.classList.toggle("open");
+  }
 
-  menuWraper[0].addEventListener("click", toggleMenu);
+  menuWraper[0].addEventListener("click", openMenu);
 
 
 
 //slider
+
+//dots
   const sliderCircles = Array.prototype.slice.call( document.querySelectorAll(".circle"));
-  const circlesLen = sliderCircles.length;
+  const sliderLen = sliderCircles.length;
   let activeCircleIndex = 0;
 
   //find index of active circle with .visible class in sliderCircles array and and move it to the next element;
   function switchActiveCircle() {
     let activeCircle = document.querySelector(".circle.visible");
 
-    if( sliderCircles.indexOf(activeCircle) == circlesLen-1 ) {
+    if( sliderCircles.indexOf(activeCircle) == sliderLen-1 ) {
       activeCircleIndex = 0;
     } else {
       activeCircleIndex++;
@@ -39,7 +46,46 @@ document.addEventListener("DOMContentLoaded", function(){
     document.querySelectorAll(".circle")[activeCircleIndex].classList.add("visible");
   };
 
+//number count
+  let activeSlide = document.querySelector(".number").innerText;
+  let number = parseInt(activeSlide, 10);
+
+  function nextNumber() {
+    if ( number === sliderLen ) {
+      number = 1;
+    } else {
+      number++;
+    }
+    document.querySelector(".number").innerText = number;
+  }
+
+//img slideshow
+  const slides = Array.prototype.slice.call(document.querySelectorAll(".slide"));
+  console.log(slides);
+  const sliderLength = slides.length;
+  let indexOfActiveSlide = 0;
+
+  function switchActiveSlide() {
+    let activeSlide = document.querySelector(".slide.display");
+
+    if( slides.indexOf(activeSlide) == sliderLength-1 ) {
+      indexOfActiveSlide = 0;
+    } else {
+      indexOfActiveSlide++;
+    }
+  }
+    function toggleActiveSlide() {
+      let activeSlide = document.querySelector(".slide.display");
+
+      switchActiveSlide();
+
+      activeSlide.classList.remove("display");
+      document.querySelectorAll(".slide")[indexOfActiveSlide].classList.add("display");
+    };
+
   setInterval( toggleActiveCircle, 2000 );
+  setInterval( nextNumber, 2000 );
+  setInterval( toggleActiveSlide, 2000 );
 
 
-}, false);
+});
