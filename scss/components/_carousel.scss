@@ -1,0 +1,71 @@
+.slide {
+  width: auto;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: 210%;
+  background-position: 4%;
+  &.one {
+    background-image: url('../img/background1.png');
+    display: none;
+    position: relative;
+    bottom: 20px;
+  }
+  &.two {
+    display: none;
+    background-image: url('../img/background2.png');
+  }
+  &.three {
+    display: none;
+  }
+  &.display {
+    display: block;
+  }
+}
+.header-title {
+  font-family: 'Roboto';
+  font-weight: 400;
+  letter-spacing: 3px;
+  h1 {
+    margin: 0.3em 0;
+    color: rgba(0, 0, 0, 1);
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  a {
+    font-size: 1em;
+    color:  rgba(0, 0, 0, 0.8);
+    text-decoration: underline;
+  }
+}
+.slider-counter {
+  position: relative;
+  bottom: 70px;
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+  .circle-counter {
+    width: 130px;
+    height: 28px;
+    margin: 0 20px 0 75px;
+    display: flex;
+    .circle {
+      width: 10px;
+      height: 10px;
+      border: 2px solid rgba(229, 229, 229, 1);
+      border-radius: 100%;
+      margin: 8px;
+      &.visible {
+        background-color: rgba(229, 229, 229, 1);
+      }
+    }
+  }
+  .text-counter {
+    letter-spacing: 2px;
+    font-style: italic;
+    font-size: 0.5em;
+    color:  rgba(0, 0, 0, 0.8);
+  }
+}
