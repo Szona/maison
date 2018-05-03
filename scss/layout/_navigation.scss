@@ -17,7 +17,30 @@
   letter-spacing: 10px;
 }
 .menu {
-  display: none;
+  width: 300px;
+  height: 280px;
+  border: 2px solid rgb(238, 238, 238);
+  position: fixed;
+  top: 60px;
+  left: 20px;
+  background-color: $primary-background;
+  font-size: 1em;
+  font-family: 'Roboto';
+  font-weight: 400;
+  letter-spacing: 3px;
+  padding: 0;
+  z-index: 2;
+  visibility: hidden;
+  li {
+    margin: 30px;
+    .menu-item {
+      cursor: pointer;
+      text-transform: capitalize;
+    }
+  }
+  &.open {
+    visibility: visible;
+  }
 }
 .shopping-cart {
   width: 35px;
