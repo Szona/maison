@@ -87,5 +87,34 @@ document.addEventListener("DOMContentLoaded", function(){
   setInterval( nextNumber, 2000 );
   setInterval( toggleActiveSlide, 2000 );
 
+  // hover on product image to show favicon
+  const product = document.querySelectorAll(".product-img");
+  const favIcon = document.querySelectorAll(".product-img-fav");
+  const productNum = product.length;
+  const favIconNum = favIcon.length;
+
+  if ( productNum === favIconNum ) {
+    for (let i = 0; i < productNum; i++) {
+      for (let j = 0; j< productNum; j++) {
+        if (i === j) {
+          function onMouseOver() {
+            favIcon[j].classList.add("visible");
+          }
+          function onMouseOut() {
+            favIcon[j].classList.remove("visible");
+          }
+          product[i].addEventListener("mouseover", onMouseOver);
+          product[i].addEventListener("mouseout", onMouseOut);
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
 
 });
