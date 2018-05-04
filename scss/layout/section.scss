@@ -19,8 +19,20 @@
   height: 150px;
   background-image: url('./../img/products/one.png');
   background-size: cover;
+  position: relative;
   &:hover {
     background-image: url('./../img/products/one-hover.png');
+  }
+  &-fav {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    visibility: hidden;
+    &.visible {
+      visibility: visible;
+    }
   }
 }
 .product-name {
