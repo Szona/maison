@@ -109,10 +109,41 @@ document.addEventListener("DOMContentLoaded", function(){
       }
     }
   }
+//hover on product thumbnail to show add to cart in place of price
+  const productThumbnail = document.querySelectorAll(".product-thumbnail");
+  const productPrice = document.querySelectorAll(".product-price");
+  const productThumbnailNum = productThumbnail.length;
+  const productPriceNum = productPrice.length;
 
+  const addToCart = document.createElement("div");
+  addToCart.setAttribute("class", "add-to-cart");
 
+  const addTextToCart = document.createElement("div");
+  addTextToCart.setAttribute("href", "#");
+  addTextToCart.textContent = "Add to cart";
 
+  const cartIcon = document.createElement("span");
+  cartIcon.setAttribute("class", "cart icon ion-bag");
 
+  addToCart.append(cartIcon);
+  addToCart.append(addTextToCart);
+
+  if ( productThumbnailNum === productPriceNum ) {
+    for (let i = 0; i < productThumbnailNum; i++) {
+      for (let j = 0; j < productPriceNum; j++) {
+        if (i === j) {
+          function onMouseOver() {
+            productThumbnail[j].replaceChild(addToCart, productPrice[i]);
+          }
+          function onMouseOut() {
+            productThumbnail[j].replaceChild(productPrice[i], addToCart);
+          }
+          productThumbnail[i].addEventListener("mouseover", onMouseOver);
+          productThumbnail[i].addEventListener("mouseout", onMouseOut);
+        }
+      }
+    }
+  }
 
 
 
