@@ -8,7 +8,7 @@
     background-image: url('../img/background1.png');
     display: none;
     position: relative;
-    bottom: 20px;
+    bottom: 14px;
   }
   &.two {
     display: none;
@@ -46,6 +46,7 @@
   justify-content: space-around;
   align-items: center;
   z-index: 2;
+  padding: 45px 0;
   .circle-counter {
     width: 130px;
     height: 28px;
