@@ -1,6 +1,7 @@
 .products {
   //border: 1px solid red;
-  width: 100%;
+  width: 95vw;
+  margin: 0 2.5vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -50,6 +51,7 @@
   margin-bottom: 20px;
   color: rgba(0, 0, 0, 0.5);
   display: flex;
+  cursor: pointer;
  .cart {
    font-size: 1em;
    margin-right: 5px;
