@@ -145,6 +145,18 @@ document.addEventListener("DOMContentLoaded", function(){
     }
   }
 
+  //categories
+  const categories = document.querySelector(".categories");
+  const categoriesList = document.querySelector(".categories-list");
+
+  function openCategories() {
+    console.log("fsdf");
+    categoriesList.classList.toggle("open");
+    console.log(  categoriesList.classList );
+  }
+  categories.addEventListener("click", openCategories);
+
+
 
 
 
