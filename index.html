@@ -68,6 +68,27 @@
       <div class="filter">
         <!-- <span class="flashlight-icon"></span> -->
         <h2 class="title"><span class="flashlight-icon"></span> Filter<span class="triangle"></span></h2>
+        <div class="filter-list">
+          <h3 class="filter-list-title">Filter by </h3>
+          <form>
+            <fieldset class="filter-price">
+                <legend>Price</legend>
+                <label for="range"></label>
+                <input id="range" type="range" name="range" min="0" max="100" step="1" value="10"/>
+                <input id="range" type="range" name="range" min="0" max="100"step="1" value="50"/>
+                <label for="nim"></label>
+                <input class="range-value-nim" id="min" type="number" name="min" value="10"/>
+                <label for="max"></label>
+                <input class="range-value-max" id="max" type="number" name="max" value="50"/>
+                <form>
+                  <input type="button" value="filter">
+                </form>
+            </fieldset>
+          </form>
+          <div class="filter-color"></div>
+          <div class="filter-size"></div>
+          <div class="found-products"></div>
+        </div>
       </div>
     </aside>
     <section class="products">
