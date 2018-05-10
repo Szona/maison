@@ -74,18 +74,38 @@
             <fieldset class="filter-price">
                 <legend>Price</legend>
                 <label for="range"></label>
-                <input id="range" type="range" name="range" min="0" max="100" step="1" value="10"/>
-                <input id="range" type="range" name="range" min="0" max="100"step="1" value="50"/>
+                <input id="range-one" type="range" name="range" min="0" max="100" step="1" value="10"/>
+                <input id="range-two" type="range" name="range" min="0" max="100"step="1" value="50"/>
                 <label for="nim"></label>
                 <input class="range-value-nim" id="min" type="number" name="min" value="10"/>
                 <label for="max"></label>
                 <input class="range-value-max" id="max" type="number" name="max" value="50"/>
                 <form>
-                  <input type="button" value="filter">
+                  <input class="btn-filter" type="button" value="filter">
                 </form>
             </fieldset>
+            <fieldset class="filter-color">
+              <legend>Color</legend>
+
+              <input id="checkbox-grey" class="color-checkbox grey" type="checkbox"/>
+              <label class="checkbox" for="checkbox-grey"></label>
+
+              <input id="checkbox-white" class="color-checkbox white" type="checkbox"/>
+              <label class="checkbox"  for="checkbox-white"></label>
+
+              <input id="checkbox-red" class="color-checkbox red" type="checkbox"/>
+              <label class="checkbox" for="checkbox-red"></label>
+
+              <input id="checkbox-blue" class="color-checkbox blue" type="checkbox"/>
+              <label class="checkbox" for="checkbox-blue"></label>
+
+              <input id="checkbox-yellow" class="color-checkbox yellow" type="checkbox"/>
+              <label class="checkbox" for="checkbox-yellow"></label>
+
+              <input id="checkbox-green" class="color-checkbox green" type="checkbox"/>
+              <label class="checkbox" for="checkbox-green"></label>
+            </fieldset>
           </form>
-          <div class="filter-color"></div>
           <div class="filter-size"></div>
           <div class="found-products"></div>
         </div>
