@@ -146,18 +146,34 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
   //categories
-  const categories = document.querySelector(".categories");
+  const categories = document.querySelector(".categories .title");
   const categoriesList = document.querySelector(".categories-list");
 
   function openCategories() {
-    console.log("fsdf");
     categoriesList.classList.toggle("open");
-    console.log(  categoriesList.classList );
+
   }
   categories.addEventListener("click", openCategories);
 
+  //filter
+  const filter = document.querySelector(".filter .title");
+  const filterList = document.querySelector(".filter-list");
+
+  function openFilters() {
+    filterList.classList.toggle("open");
+  }
+  filter.addEventListener("click", openFilters);
 
 
+  //filter price
+
+  const trackOne = document.querySelector("#range-one");
+  const trackTwo = document.querySelector("#range-two");
+  const minRange = document.querySelector("#min");
+  const maxRange = document.querySelector("#max");
+
+
+  console.log(trackOne, trackTwo, minRange, maxRange);
 
 
 });
