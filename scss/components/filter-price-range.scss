@@ -1,3 +1,9 @@
+.filter-price {
+  @include fieldset-filter;
+  legend {
+    @include fieldset-legend;
+  }
+}
 input[type=range] {
     -webkit-appearance: none;
     pointer-events: none;
@@ -8,13 +14,13 @@ input[type=range] {
     width: 280px;
     outline: none;
     height: 17px;
-    margin: 0;
+    margin: 10px 0;
     padding: 0;
 }
 input[type=range]::-webkit-slider-runnable-track {
     width: 280px;
     height: 1px;
-    background: black;
+    background: rgba(0 ,0, 0, 0.2);
     border: none;
 }
 input[type=range]::-webkit-slider-thumb {
@@ -38,7 +44,7 @@ input[type=range]::-moz-range-track {
     height: 1px;
     position: relative;
     z-index: -1;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.2);
     border: none;
 }
 input[type=range]:last-of-type::-moz-range-track {
@@ -48,7 +54,7 @@ input[type=range]:last-of-type::-moz-range-track {
    height: 1px;
    position: relative;
    z-index: -1;
-   background-color: rgba(0, 0, 0, 1);
+   background-color: rgba(0, 0, 0, 0.2);
 }
 input[type=range]::-moz-range-thumb {
   pointer-events: all;
@@ -65,17 +71,34 @@ input[type=range]::-moz-range-thumb {
 input[type=range]::-moz-focus-outer {
   border: none;
 }
-.range-value-nim {
-  width: 100px;
+.range-value-nim,
+.range-value-max {
+  width: 50px;
+  height: 20px;
   position: absolute;
-  top: 80px;
+  top: 55px;
+  font-family: 'Roboto';
+  font-size: 0.7em;
+  padding-left: 10px;
+  // border: 1px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.5);
 }
 .range-value-max {
-  width: 100px;
-  position: absolute;
-  top: 100px;
+  right: 77px;
 }
-input[type=button] {
+.btn-filter {
+  width: 50px;
+  height: 20px;
   position: absolute;
-  top: 120px;
+  top: 55px;
+  font-size: 0.8em;
+  padding: 0;
+  right: -83px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto';
+  font-size: 0.7em;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 1px;
 }
