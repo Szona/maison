@@ -1,0 +1,71 @@
+.filter-color {
+  @include fieldset-filter;
+  legend {
+    @include fieldset-legend;
+    position: absolute;
+    top: 85px;
+  }
+}
+@for $i from 1 through 6 {
+  .checkbox:nth-of-type(#{$i}){
+    left: -30px + (30 * $i);
+  }
+  .color-checkbox:nth-of-type(#{$i}) {
+    left: -30px + (30 * $i);
+  }
+}
+input[type="checkbox"] {
+ visibility: hidden;
+ position: absolute;
+ top: 115px;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 115px;
+  left: 0;
+}
+.checkbox:nth-of-type(2) {
+  border: 1px solid grey;
+}
+.checkbox::before {
+  content: "";
+  height: 7px;
+  width: 12px;
+  border: 1px solid #000;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  opacity: 0;
+}
+input[type="checkbox"] {
+  &.grey + label {
+    background-color: grey;
+  }
+  &.white + label {
+    background-color: white;
+    border-color: grey;
+  }
+  &.red + label {
+    background-color: red;
+  }
+  &.blue + label {
+    background-color: blue;
+  }
+  &.yellow + label {
+    background-color: yellow;
+  }
+  &.green + label{
+    background-color: green;
+  }
+}
+ input[type="checkbox"]:checked + label::before {
+  opacity: 1;
+}
