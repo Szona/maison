@@ -4,6 +4,7 @@
 
 $primary-background: rgb(250, 250, 250);
 $secondary-background: rgb(245, 245, 245);
+$border-color: rgb(0, 0, 0);
 $font-color: rgb(0, 0, 0);
 $font-color-header: rgb(73, 73, 73);
 
@@ -13,3 +14,13 @@ $font-color-header: rgb(73, 73, 73);
 $bar-width: 35px;
 $bar-height: 4px;
 $bar-spacing: 10px;
+
+// --------------------------------------------------------
+// filter colors
+// --------------------------------------------------------
+ $grey: rgb(199, 199, 199);
+ $white: rgb(255, 255, 255);
+ $red: rgb(255, 139, 139);
+ $blue: rgb(178, 230, 254);
+ $yellow: rgb(253, 233, 153);
+ $green: rgb(190, 255, 201);

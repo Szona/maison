@@ -8,10 +8,10 @@
 }
 @for $i from 1 through 6 {
   .checkbox:nth-of-type(#{$i}){
-    left: -30px + (30 * $i);
+    left: -35px + (35 * $i);
   }
   .color-checkbox:nth-of-type(#{$i}) {
-    left: -30px + (30 * $i);
+    left: -35px + (35 * $i);
   }
 }
 input[type="checkbox"] {
@@ -20,9 +20,9 @@ input[type="checkbox"] {
  top: 115px;
 }
 .checkbox {
-  width: 20px;
-  height: 20px;
-  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  background-color: $primary-background;
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
@@ -30,40 +30,40 @@ input[type="checkbox"] {
   left: 0;
 }
 .checkbox:nth-of-type(2) {
-  border: 1px solid grey;
+  border: 1px solid $grey;
 }
 .checkbox::before {
   content: "";
-  height: 7px;
-  width: 12px;
-  border: 1px solid #000;
+  height: 5px;
+  width: 8px;
+  border: 1px solid $border-color;
   border-top: none;
   border-right: none;
   transform: rotate(-45deg);
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 8px;
+  left: 8px;
   opacity: 0;
 }
 input[type="checkbox"] {
   &.grey + label {
-    background-color: grey;
+    background-color: $grey;
   }
   &.white + label {
-    background-color: white;
-    border-color: grey;
+    background-color: $white;
+    border-color: $grey;
   }
   &.red + label {
-    background-color: red;
+    background-color: $red;
   }
   &.blue + label {
-    background-color: blue;
+    background-color: $blue;
   }
   &.yellow + label {
-    background-color: yellow;
+    background-color: $yellow;
   }
   &.green + label{
-    background-color: green;
+    background-color: $green;
   }
 }
  input[type="checkbox"]:checked + label::before {
