@@ -15,3 +15,19 @@
   font-size: 0.8em;
   text-transform: uppercase;
 }
+@mixin filter-price-track {
+  width: $track-width;
+  height: $track-height;
+  background: $slider-track-color;
+  border: none;
+}
+@mixin range-thumb {
+  pointer-events: all;
+  position: relative;
+  outline: 0;
+  border: 1px solid rgb(0, 0, 0);
+  background: $primary-background;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
