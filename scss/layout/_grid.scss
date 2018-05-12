@@ -10,7 +10,6 @@
   "header"
   "categories"
   "products"
-  "discount"
   "footer";
 }
 .main-header {
@@ -26,9 +25,6 @@
 }
 .products {
   grid-area: products;
-}
-.discount {
-  grid-area: discount;
 }
 .main-footer {
   grid-area: footer;

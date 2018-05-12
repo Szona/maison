@@ -1,0 +1,87 @@
+.main-footer {
+  width: 100vw;
+  background: $secondary-background;
+
+}
+.newsletter {
+  width: 95vw;
+  margin: 0 2.5vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.newsletter-title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.25em;
+  font-style: italic;
+  font-weight: 400;
+  font-family: 'Libre Baskerville', serif;
+  padding: 20px 0;
+}
+.email {
+  width: 70%;
+  margin-bottom: 20px;
+  border: 2px solid rgb(238, 238, 238);
+  padding: 10px;
+  font-family: 'Roboto';
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+  }
+}
+.btn-subscribe {
+  margin-bottom: 20px;
+  width: 30%;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 0.8em;
+  font-family: 'Roboto';
+  background: $primary-background;
+  letter-spacing: 1px;
+}
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  padding: 30px 40px;
+  border-top: 1px solid rgb(238, 238, 238);
+}
+.footer-menu-item {
+  font-family: 'Roboto';
+  font-size: 0.8em;
+  font-weight: 500;
+  color: $font-color;
+  letter-spacing: 1px;
+  padding-top: 10px;
+}
+.social-media {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 60px;
+}
+.copyright {
+  font-family: 'Roboto';
+  color: rgba(0, 0, 0, 0.3);
+}
+.social-media-icons  {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100px;
+  .icon img {
+    width: 1em;
+    height: 1em;
+  }
+}
