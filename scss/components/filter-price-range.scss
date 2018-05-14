@@ -1,5 +1,6 @@
 .filter-price {
   @include fieldset-filter;
+  width: 55vw;
   legend {
     @include fieldset-legend;
   }
