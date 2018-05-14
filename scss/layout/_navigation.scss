@@ -1,9 +1,9 @@
 .main-nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 .img-logo {
     display: none;
@@ -11,28 +11,28 @@
 .text-logo {
   font-family: 'Roboto', sans-serif;
   color: $font-color;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 .menu {
-  width: 300px;
+  width: 200px;
   height: 280px;
   border: 1px solid rgb(238, 238, 238);
-  position: fixed;
-  top: 60px;
-  left: 20px;
-  background-color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
   font-size: 1em;
   font-family: 'Roboto';
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 3px;
   padding: 0;
   z-index: 2;
   visibility: hidden;
   li {
-    margin: 30px;
+    margin: 20px;
     .menu-item {
       color: rgba(0, 0, 0, 1);
       cursor: pointer;
