@@ -1,11 +1,8 @@
 .sidebar {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 1.5em;
-  width: 95vw;
-  margin: 0 2.5vw;
 }
 .title {
   font-size: 1em;
@@ -21,7 +18,7 @@
 	border-top: 5px solid black;
   position: relative;
   top: 15px;
-  left: 5px;
+  left: 3px;
 }
 .flashlight-icon {
   width: 13px;
