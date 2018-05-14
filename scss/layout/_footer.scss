@@ -1,11 +1,8 @@
 .main-footer {
-  width: 100vw;
   background: $secondary-background;
 
 }
 .newsletter {
-  width: 95vw;
-  margin: 0 2.5vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -14,7 +11,6 @@
   padding: 20px 0;
 }
 .newsletter-title {
-  width: 100%;
   text-align: center;
   font-size: 1.25em;
   font-style: italic;
@@ -23,7 +19,7 @@
   padding: 20px 0;
 }
 .email {
-  width: 70%;
+  width: 55%;
   margin-bottom: 20px;
   border: 2px solid rgb(238, 238, 238);
   padding: 10px;
@@ -36,7 +32,7 @@
 }
 .btn-subscribe {
   margin-bottom: 20px;
-  width: 30%;
+  width: 25%;
   border: 2px solid rgb(0, 0, 0);
   padding: 10px;
   font-size: 0.8em;
@@ -65,13 +61,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   height: 60px;
 }
 .copyright {
   font-family: 'Roboto';
   color: rgba(0, 0, 0, 0.3);
+  font-size: 0.6em;
 }
 .social-media-icons  {
   padding: 0;
