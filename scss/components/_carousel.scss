@@ -1,6 +1,5 @@
 .slide {
-  width: auto;
-  height: 250px;
+  height: $carousel-height;
   background-repeat: no-repeat;
   background-size: 210%;
   background-position: 4%;
@@ -22,7 +21,6 @@
   }
 }
 .header-title {
-  font-family: 'Roboto';
   font-weight: 400;
   letter-spacing: 3px;
   h1 {
@@ -39,14 +37,12 @@
 }
 .slider-counter {
   position: relative;
-  bottom: 70px;
-  height: 50px;
-  width: 100vw;
-  display: flex;
+  bottom: 50px;
+  right: 2%;
+  @include flex;
   justify-content: space-around;
   align-items: center;
   z-index: 2;
-  padding: 45px 0;
   .circle-counter {
     width: 130px;
     height: 28px;
@@ -55,11 +51,11 @@
     .circle {
       width: 10px;
       height: 10px;
-      border: 2px solid rgba(229, 229, 229, 1);
+      border: 2px solid $circle-counter-color;
       border-radius: 100%;
       margin: 8px;
       &.visible {
-        background-color: rgba(229, 229, 229, 1);
+        background-color: $circle-counter-color;
       }
     }
   }
@@ -67,6 +63,7 @@
     letter-spacing: 2px;
     font-style: italic;
     font-size: 0.5em;
-    color:  rgba(0, 0, 0, 0.8);
+    color: lighten($font-color, 10);
+    margin-left: 30px;
   }
 }

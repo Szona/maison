@@ -52,7 +52,6 @@ input[type=range]::-moz-focus-outer {
   height: 20px;
   position: absolute;
   top: 55px;
-  font-family: 'Roboto';
   font-size: 0.7em;
   padding-left: 10px;
   color: rgba(0, 0, 0, 0.5);
@@ -70,9 +69,7 @@ input[type=range]::-moz-focus-outer {
   right: -83px;
   border: none;
   background-color: rgba(0, 0, 0, 0.1);
-  font-family: 'Roboto';
   font-size: 0.7em;
-  font-weight: 500;
   text-transform: capitalize;
   letter-spacing: 1px;
 }

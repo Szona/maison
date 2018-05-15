@@ -1,6 +1,5 @@
 .main-nav {
-  display: flex;
-  flex-direction: row;
+  @include flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
@@ -9,24 +8,19 @@
     display: none;
 }
 .text-logo {
-  font-family: 'Roboto', sans-serif;
-  color: $font-color;
   font-size: 1.5em;
-  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 .menu {
   width: 200px;
-  height: 280px;
-  border: 1px solid rgb(238, 238, 238);
+  height: $header-hight;
+  border: 1px solid $header-border-color;
   position: absolute;
   top: 40px;
   left: 0;
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1em;
-  font-family: 'Roboto';
-  font-weight: 500;
   letter-spacing: 3px;
   padding: 0;
   z-index: 2;
@@ -34,7 +28,6 @@
   li {
     margin: 20px;
     .menu-item {
-      color: rgba(0, 0, 0, 1);
       cursor: pointer;
       text-transform: capitalize;
     }
@@ -54,8 +47,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 1);
-  font-family: 'Roboto';
+  background-color: $font-color;
   font-size: 0.4em;
   position: absolute;
   bottom: -10%;
@@ -63,5 +55,5 @@
   z-index: 2;
   text-align: center;
   padding: 3px;
-  color: rgba(255, 255, 255, 1);
+  color: $primary-background;
 }

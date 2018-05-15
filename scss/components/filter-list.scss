@@ -1,11 +1,11 @@
 .filter-list {
   height: 420px;
-  width: 90vw;
+  width: $filter-lists-width;
   position: absolute;
   top: 55px;
   right: 0;
-  background-color: rgba(255, 255, 255, 1);
-  border: 1px solid rgb(238, 238, 238);
+  background-color: $primary-background;
+  border: 1px solid $header-border-color;
   padding: 10px;
   visibility: hidden;
   &.open {
@@ -13,11 +13,8 @@
   }
 }
 .filter-list-title {
-  font-family: 'Roboto';
   font-size: 1em;
-  font-weight: 500;
   letter-spacing: 2px;
-  color: rgba(0, 0, 0, 1);
   text-transform: capitalize;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -27,6 +24,4 @@
   position: absolute;
   top: 380px;
   font-size: 0.8em;
-  font-weight: 500;
-  font-family: 'Roboto';
 }

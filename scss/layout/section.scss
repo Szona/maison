@@ -1,7 +1,6 @@
 .products {
   width: 100%;
-  display: flex;
-  flex-direction: row;
+  @include flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -9,8 +8,6 @@
 }
 .product-thumbnail {
   font-size: 0.8em;
-  font-family: 'Roboto';
-  font-weight: 500;
 }
 .product-img {
   width: 42vw;
@@ -36,18 +33,15 @@
 .product-name {
   padding: 10px 0;
 }
-.product-price {
+.product-price,
+.add-to-cart {
   height: 1.5em;
   padding:  0 0 10px 0;
   margin-bottom: 20px;
   color: rgba(0, 0, 0, 0.5);
 }
 .add-to-cart {
-  height: 1.5em;
-  padding:  0 0 10px 0;
-  margin-bottom: 20px;
-  color: rgba(0, 0, 0, 0.5);
-  display: flex;
+  @include flex;
   cursor: pointer;
  .cart {
    font-size: 1em;

@@ -1,13 +1,10 @@
 .sidebar {
-  display: flex;
-  flex-direction: row;
+  @include flex;
   justify-content: space-between;
   align-items: center;
 }
 .title {
   font-size: 1em;
-  font-family: 'Roboto';
-  font-weight: 500;
   letter-spacing: 3px;
 }
 .triangle {
