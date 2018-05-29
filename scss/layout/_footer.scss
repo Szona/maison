@@ -73,3 +73,8 @@
     height: 1em;
   }
 }
+@include for-tablet-portrait-up {
+ .newsletter-title {
+   padding: 20px 50px;
+ }
+}

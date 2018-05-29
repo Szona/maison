@@ -35,5 +35,6 @@
 @include for-tablet-portrait-up {
   .sidebar {
     height: 100px;
+    justify-content: space-evenly;
   }
 }

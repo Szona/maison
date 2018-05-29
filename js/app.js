@@ -175,5 +175,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   console.log(trackOne, trackTwo, minRange, maxRange);
 
+  // filtrowanie produktów zrób w jason
+
 
 });
