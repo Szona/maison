@@ -36,8 +36,8 @@
   font-size: 0.8em;
   text-transform: uppercase;
 }
-@mixin filter-price-track {
-  width: $track-width;
+@mixin filter-price-track-mobile {
+  width: $track-width-mobile;
   height: $track-height;
   background: $slider-track-color;
   border: none;
