@@ -4,11 +4,14 @@
   align-items: center;
   padding-top: 10px;
 }
+.logo {
+  padding-right: 0;
+}
 .img-logo {
-    display: none;
+  display: none;
 }
 .text-logo {
-  font-size: 1.5em;
+  font-size: 1.8em;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
@@ -56,4 +59,47 @@
   text-align: center;
   padding: 3px;
   color: $primary-background;
+}
+@include for-tablet-portrait-up {
+  .main-nav {
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 10px;
+    background: $secondary-background;
+    padding: 0 50px
+  }
+  .menu {
+    width: auto;
+    height: auto;
+    position: static;
+    visibility: visible;
+    border: none;
+    background: none;
+    @include flex;
+    justify-content: flex-start;
+    li {
+      margin: 10px;
+    }
+    .menu-item {
+      font-size: 0.8em;
+  }
+  }
+  .logo {
+    align-self: flex-start;
+    width: 30px;
+    margin-right: auto;
+    z-index: 3;
+  }
+  .text-logo {
+    display: none;
+  }
+  .img-logo {
+    width: 38px;
+    font-size: 2em;
+    display: block;
+    padding-top: 16px;
+    position: relative;
+    right: 30px;
+    top: 8px;
+    }
 }
