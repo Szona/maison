@@ -25,3 +25,9 @@
   top: 380px;
   font-size: 0.8em;
 }
+@include for-tablet-portrait-up {
+  .filter-list {
+    width: 42vw;
+    top: 73px;
+  }
+}

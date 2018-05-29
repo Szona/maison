@@ -32,3 +32,8 @@
   position: relative;
   z-index: 2;
 }
+@include for-tablet-portrait-up {
+  .sidebar {
+    height: 100px;
+  }
+}

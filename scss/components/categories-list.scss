@@ -27,3 +27,16 @@
    }
   }
 }
+@include for-tablet-portrait-up {
+  .categories-list {
+    width: 42vw;
+    height: 50vw;
+    top: 55px;
+    li {
+      margin-bottom: 15px;
+    }
+  }
+  .categories-list-item {
+    font-size: 1em;
+  }
+}
