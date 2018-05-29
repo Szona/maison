@@ -58,3 +58,19 @@
   line-height: 1.3;
   text-decoration: underline;
 }
+@include for-tablet-portrait-up {
+  .products {
+    justify-content: space-evenly;
+  }
+  .product-thumbnail {
+    font-size: 1em;
+  }
+  .product-img {
+    width: 35vw;
+    height: 35vw;
+  }
+  .product-price,
+  .add-to-cart {
+    margin-bottom: 40px;
+  }
+}
