@@ -67,3 +67,33 @@
     margin-left: 30px;
   }
 }
+@include for-tablet-portrait-up {
+  .slide {
+    height: 400px;
+  }
+  .header-title {
+    width: 40vw;
+    z-index: 3;
+    flex: 5 1 50px;
+    @include flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .slider-counter {
+    width: 56vw;
+    position: static;
+    flex: 1 1 50px;
+    align-items: center;
+    justify-content: flex-start;
+    .circle-counter {
+      margin: 0;
+      padding: 0;
+      flex: 1 1 40%;
+    }
+    .text-counter {
+      flex: 1 1 60%;
+      margin: 0 50px 0 0;
+      text-align: right;
+    }
+  }
+}
