@@ -32,17 +32,12 @@
 @include for-tablet-portrait-up {
   .grid-parent {
     grid-template-columns: 50px 1fr 50px;
-    // grid-gap: 10px 0;
-     // grid-template-areas:
-     // "h" "n" "h";
   }
   .main-nav {
     grid-column: 1 / -1;
-    // grid-area: n;
   }
   .main-header {
     grid-column: 1 / -1;
-    // grid-area: h;
   }
   .sidebar {
     grid-column: 2 / 3;
@@ -55,5 +50,22 @@
   }
   .social-media {
     grid-column: 2 / 3;
+  }
+}
+@include for-desktop-up {
+  .grid-parent {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .main-nav {
+    grid-column: 1 / -1;
+  }
+  .main-header {
+    grid-column: 1 / -1;
+  }
+  .sidebar {
+    grid-column: 2 / 4;
+  }
+  .products {
+    grid-column: 6 / 12;
   }
 }

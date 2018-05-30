@@ -21,8 +21,12 @@
   }
   li {
     margin-bottom: 10px;
+    a sup {
+      display: none;
+    }
     .categories-list-item {
       font-size: 0.8em;
+      color: rgba(0, 0, 0, 0.5);
       text-transform: uppercase;
    }
   }
@@ -35,6 +39,9 @@
     left: -15.5vw;
     li {
       margin-bottom: 15px;
+      a sup {
+        display: none;
+      }
     }
   }
   .categories-list-item {
@@ -43,7 +50,7 @@
 }
 @include for-desktop-up {
   .categories-list {
-    width: 100%;
+    width: $track-width-desktop;
     height: auto;
     position: static;
     visibility: visible;
@@ -58,6 +65,7 @@
       text-transform: capitalize;
       color: rgba(0, 0, 0, 0.7);
       sup {
+        display: inline-block;
         color: rgba(0, 0, 0, 0.5);
       }
     }

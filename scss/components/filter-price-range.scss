@@ -97,3 +97,17 @@ input[type=range]::-moz-focus-outer {
     left: 55%;
   }
 }
+@include for-desktop-up {
+  input[type=range] {
+    width: $track-width-desktop;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: $track-width-desktop;
+  }
+  input[type=range]::-moz-range-track {
+    width: $track-width-desktop;
+  }
+  .btn-filter {
+    left: 31%;
+  }
+}

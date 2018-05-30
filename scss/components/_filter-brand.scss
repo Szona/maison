@@ -1,0 +1,47 @@
+@include for-phone-only {
+  .filter-brand-title,
+  .filter-brand {
+    display: none;
+  }
+}
+@include for-tablet-portrait-up {
+  .filter-brand-title,
+  .filter-brand {
+    display: none;
+  }
+}
+@include for-tablet-landscape-up  {
+  .filter-brand-title,
+  .filter-brand {
+    display: none;
+  }
+}
+@include for-desktop-up {
+  .filter-brand-title,
+  .filter-brand {
+    display: block;
+  }
+  .filter-brand-title, {
+    margin-top: 300px;
+    margin-bottom: 0;
+    padding: 0;
+    @include fieldset-legend;
+  }
+  .filter-brand {
+    padding: 0 0 20px 0;
+    width: $track-width-desktop;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    li {
+      padding-top: 10px;
+      a {
+        font-size: 0.8em;
+        color: rgba(0, 0, 0, 0.5);
+        letter-spacing: 2px;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .filter-brand li:first-of-type {
+    padding: 0;
+  }
+}

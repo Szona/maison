@@ -8,10 +8,10 @@
 }
 @for $i from 1 through 6 {
   .checkbox:nth-of-type(#{$i}){
-    left: -35px + (35 * $i);
+    left: -40px + (40 * $i);
   }
   .color-checkbox:nth-of-type(#{$i}) {
-    left: -35px + (35 * $i);
+    left: -40px + (40 * $i);
   }
 }
 input[type="checkbox"] {

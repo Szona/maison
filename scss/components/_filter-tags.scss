@@ -1,0 +1,46 @@
+// @include for-phone-only {
+//   .filter-tags-title,
+//   .filter-tags {
+//     display: none;
+//   }
+// }
+// @include for-tablet-portrait-up {
+//   .filter-tags-title,
+//   .filter-brand {
+//     display: none;
+//   }
+// }
+// @include for-tablet-landscape-up  {
+//   .filter-tags-title,
+//   .filter-tags {
+//     display: none;
+//   }
+// }
+@include for-desktop-up {
+  .filter-tags-title,
+  .filter-tags {
+    width: 42%;
+    display: block;
+    margin: 0;
+  }
+  .filter-tags-title {
+    font-size: 1em;
+    letter-spacing: 3px;
+    margin-top: 50px;
+    text-transform: capitalize;
+  }
+  .filter-tags {
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      padding-top: 10px;
+      a {
+        padding-right: 5px;
+        color: rgba(0, 0, 0, 0.5);
+        text-transform: capitalize;
+        font-size: 0.8em;
+      }
+    }
+  }
+}

@@ -32,3 +32,18 @@
     right: -20vw;
   }
 }
+@include for-desktop-up {
+  .filter .title {
+    display: none;
+  }
+  .filter-list {
+    position: static;
+    visibility: visible;
+    background-color: white;
+    border: none;
+    padding: 0;
+  }
+  .found-products {
+    display: none;
+  }
+}
