@@ -38,3 +38,17 @@
     justify-content: space-evenly;
   }
 }
+@include for-desktop-up {
+  .sidebar {
+    @include flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 80vw;
+    margin-top: 50px;
+  }
+  .triangle,
+  .flashlight-icon {
+    display: none;
+  }
+}
