@@ -97,3 +97,16 @@
     }
   }
 }
+@include for-tablet-landscape-up {
+  .slide {
+    height: 450px;
+    background-size: 150%;
+    background-position: -34%;
+  }
+  .header-title h1 {
+    font-size: 1.8em;
+  }
+  .header-title a {
+    font-size: 1.2em;
+  }
+}

@@ -30,3 +30,11 @@
     width: 54vw;
   }
 }
+@include for-tablet-landscape-up {
+  .main-header {
+    height: 500px;
+  }
+  .carousel {
+    height: 450px;
+  }
+}
