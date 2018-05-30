@@ -74,3 +74,9 @@
     margin-bottom: 40px;
   }
 }
+@include for-tablet-landscape-up {
+  .product-img {
+    width: 30vw;
+    height: 30vw;
+  }
+}
