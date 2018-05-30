@@ -75,6 +75,34 @@
 }
 @include for-tablet-portrait-up {
  .newsletter-title {
-   padding: 20px 50px;
+   padding: 20px 60px;
  }
+}
+@include for-tablet-landscape-up {
+  .newsletter-title {
+    visibility: hidden;
+    position: relative;
+  }
+  .newsletter-title::before {
+    content: "Get Discount 30% off";
+    visibility: visible;
+    position: absolute;
+    text-align: center;
+    font-size: 1.25em;
+    font-style: italic;
+    font-weight: 400;
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 1px;
+    flex: 1 1 30%;
+  }
+  .email {
+    width: 40%;
+    flex: 1 1 30%;
+    margin: 10px 0 0 0;
+  }
+  .btn-subscribe {
+    flex: 1 1 1%;
+    margin: 10px 50px 0 0;
+  }
+
 }

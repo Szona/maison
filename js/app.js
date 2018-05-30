@@ -177,5 +177,19 @@ document.addEventListener("DOMContentLoaded", function(){
 
   // filtrowanie produktów zrób w jason
 
+  // change subscribe to send on sub button
+  const subBtn = document.querySelector(".btn-subscribe");
+
+  window.onresize = changeValue;
+  window.onload = changeValue;
+
+  function changeValue (e) {
+    if (window.outerWidth >= 900) {
+      subBtn.setAttribute("value", "Send");
+    } else {
+      subBtn.setAttribute("value", "Subscribe");
+    }
+  }
+
 
 });
