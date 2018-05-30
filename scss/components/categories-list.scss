@@ -41,3 +41,26 @@
     font-size: 1em;
   }
 }
+@include for-desktop-up {
+  .categories-list {
+    width: 100%;
+    height: auto;
+    position: static;
+    visibility: visible;
+    background: white;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0;
+    .categories-list-title {
+      display: none;
+    }
+    li .categories-list-item {
+      text-transform: capitalize;
+      color: rgba(0, 0, 0, 0.7);
+      sup {
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+
+}
