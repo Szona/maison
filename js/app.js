@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   console.log(trackOne, trackTwo, minRange, maxRange);
 
-  // filtrowanie produktów zrób w jason
+  // get products in json; use ajax
 
   // change subscribe to send on sub button
   const subBtn = document.querySelector(".btn-subscribe");
